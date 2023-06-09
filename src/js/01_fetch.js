@@ -21,7 +21,7 @@ function renderCharList(charDataList) {
   }
 }
 
-fetch('https://api.disneyapi.dev/character/')
+fetch('http://api.disneyapi.dev/character')
   .then((response) => response.json())
   .then((charData) => {
     console.log(charData);
