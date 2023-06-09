@@ -1,13 +1,13 @@
 .character_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 40px 40px 40px 40px;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 40px 40px 40px 40px;
+  height: 100%;
 
-&-one {
+  &-one {
     width: 170px;
     height: 240px;
     background-color: whitesmoke;
@@ -18,6 +18,14 @@
     gap: 5px;
     border-radius: 10px;
     box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 black;
+  }
 }
 
+.char_img {
+    height: 200px;
+    width: 150px;
+}
+
+.char_name {
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
