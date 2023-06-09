@@ -1,0 +1,16 @@
+.footer {
+  height: 30px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: honeydew;
+  position: fixed;
+
+  &_msg {
+    font-style: italic;
+  }
+}
