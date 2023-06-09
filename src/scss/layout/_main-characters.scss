@@ -9,24 +9,31 @@
 
   &-one {
     width: 170px;
-    height: 240px;
-    background-color: whitesmoke;
+    height: 260px;
+    background-color: $color-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
     border-radius: 10px;
-    box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 black;
+    box-shadow: 0 1px 5px 0 $color-secondary, 0 1px 3px 0 $color-secondary;
+    cursor: pointer;
   }
 }
 
 .char_img {
-    height: 200px;
-    width: 150px;
-    object-fit: cover;
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 0 $color-secondary, 0 1px 3px 0 $color-secondary;
 }
 
 .char_name {
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-main;
+  margin-top: 10px;
 }
