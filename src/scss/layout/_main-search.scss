@@ -1,0 +1,24 @@
+.searchform {
+  width: 90vw;
+  margin: auto;
+  background-color: whitesmoke;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 black;
+  border-radius: 10px;
+
+  &-search {
+    width: 70%;
+    height: 40px;
+  }
+
+  &-submit {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    background-color: aqua;
+    cursor: pointer;
+  }
+}
