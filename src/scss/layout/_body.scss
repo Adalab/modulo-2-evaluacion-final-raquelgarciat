@@ -1,16 +1,9 @@
-.page_body {
-  height: 100vh;
+.page_body-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  &-main {
+  &-chars {
     display: flex;
-    flex-direction: column;
-
-    &-chars {
-      display: flex;
-      flex-direction: row;
-    }
+    flex-direction: row;
   }
 }

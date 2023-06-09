@@ -1,6 +1,5 @@
 .footer {
   height: 30px;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +7,9 @@
   padding-left: 20px;
   padding-right: 20px;
   color: honeydew;
-  position: sticky;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 
   &_msg {
     font-style: italic;
