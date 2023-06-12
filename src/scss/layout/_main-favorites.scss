@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
 
   h3 {
     margin: auto;
@@ -11,8 +12,8 @@
 }
 
 .favorites_list {
-  padding: 20px 20px 20px 20px;
-  margin: 40px 10px 40px 30px;
+  padding: 20px 20px 25px 20px;
+  margin: 40px 30px -15px 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -27,8 +28,35 @@
 .favorites_list > li {
   background-color: rgb(85, 48, 143);
   color: azure;
+
+  &:hover {
+    background-color: aliceblue;
+    color: rgb(85, 48, 143);
+  }
 }
 
 .collapsed {
   display: none;
+}
+
+.clear-btn {
+  height: 30px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: $font-main;
+  font-size: 14px;
+  border: 2px solid grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: grey;
+    color: aliceblue;
+      border: 2px solid aliceblue;
+    transition: 0.5s;
+  }
 }

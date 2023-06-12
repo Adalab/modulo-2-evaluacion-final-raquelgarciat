@@ -21,7 +21,7 @@ function handleClick(event) {
   localStorage.setItem('favdata', JSON.stringify(favCharacterList));
   console.log(favCharacterList);
   renderFavList();
-  clear();
+  clearFavOne();
 }
 
 function renderFavList() {

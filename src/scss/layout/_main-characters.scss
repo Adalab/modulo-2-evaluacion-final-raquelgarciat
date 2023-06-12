@@ -32,6 +32,12 @@
     border-radius: 10px;
     box-shadow: 0 1px 5px 0 $color-secondary, 0 1px 3px 0 $color-secondary;
     cursor: pointer;
+
+    &:hover {
+      background-color: rgb(210, 192, 238);
+      color: rgb(44, 23, 78);
+      transition: 0.5s;
+    }
   }
 }
 
