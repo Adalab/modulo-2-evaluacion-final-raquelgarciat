@@ -18,6 +18,7 @@ function handleClick(event) {
   } else {
     favCharacterList.splice(indexCharacter, 1);
   }
+  localStorage.setItem('favdata', JSON.stringify(favCharacterList));
   console.log(favCharacterList);
   renderFavList();
   clear();

@@ -6,4 +6,4 @@ const favSection = document.querySelector('.favorites-section');
 let charDataList = [];
 let favCharacterList = [];
 
-const dataLS = JSON.parse(localStorage.getItem('data'));
+const storedFav = JSON.parse(localStorage.getItem('favdata'));

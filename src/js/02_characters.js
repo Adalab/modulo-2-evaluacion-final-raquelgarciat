@@ -10,7 +10,7 @@ function renderCharacter(charData) {
   return html;
 }
 
-function renderCharList(charDataList) {
+function renderCharList() {
   charListElement.innerHTML = '';
   for (const eachCharacter of charDataList) {
     charListElement.innerHTML += renderCharacter(eachCharacter);
