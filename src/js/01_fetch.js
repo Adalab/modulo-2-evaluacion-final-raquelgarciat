@@ -1,8 +1,11 @@
 'use strict';
 
+// variables
 const charListElement = document.querySelector('.character_list');
 let charDataList = [];
 
+
+//functions
 function renderCharacter(charData) {
   const char = `<div class="character_list-one">
     <img
@@ -21,6 +24,7 @@ function renderCharList(charDataList) {
   }
 }
 
+//events
 fetch('http://api.disneyapi.dev/character?pageSize=50')
   .then((response) => response.json())
   .then((charData) => {
