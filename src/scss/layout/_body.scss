@@ -6,9 +6,12 @@ body {
 .page_body-main {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   &-chars {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
   }
 }
