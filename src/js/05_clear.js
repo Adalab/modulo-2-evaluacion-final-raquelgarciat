@@ -7,7 +7,7 @@ function clearFav() {
 function handleClearClick(event) {
   event.preventDefault();
   localStorage.removeItem('favdata');
-  clearFav();
+  favSection.classList.add('collapsed');
 }
 
 clearBtn.addEventListener('click', handleClearClick);
