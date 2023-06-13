@@ -1,5 +1,13 @@
 'use strict';
 
+function fetchSearchData() {
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((searchCharData) => {
+      apiDataList = searchCharData.data;
+    });
+}
+
 function renderSearchList() {
   charListElement.innerHTML = '';
   for (const eachSearch of filterList) {
@@ -12,18 +20,9 @@ function handleSearch (event) {
   filterList = apiDataList.filter((newCharData) =>
     newCharData.name.toLowerCase().includes(searchValue.toLowerCase())
   );
-  console.log(filterList);
+  console.log(searchValue);
   fetchSearchData();
   renderSearchList();
 };
-
-function fetchSearchData() {
-  fetch(apiUrl)
-    .then((response) => response.json())
-    .then((searchCharData) => {
-      apiDataList = searchCharData.data;
-      renderSearchList(apiDataList);
-    });
-}
 
 searchBtn.addEventListener('click', handleSearch);

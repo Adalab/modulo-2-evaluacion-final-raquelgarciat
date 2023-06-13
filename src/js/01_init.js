@@ -12,7 +12,6 @@ function fetchData() {
   fetch(url)
     .then((response) => response.json())
     .then((charData) => {
-      console.log(charData);
       charDataList = charData.data;
       renderCharList(charDataList);
     });

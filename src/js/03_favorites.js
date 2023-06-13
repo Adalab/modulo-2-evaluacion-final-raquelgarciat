@@ -19,13 +19,13 @@ function handleClick(event) {
     favCharacterList.splice(indexCharacter, 1);
   }
   localStorage.setItem('favdata', JSON.stringify(favCharacterList));
-  console.log(favCharacterList);
+  console.log(storedFav);
   renderFavList();
-  clearFavOne();
+  clearFav();
 }
 
 function renderFavList() {
-  favSection.classList.remove('collapsed');
+  //favSection.classList.remove('collapsed');
   favListElement.innerHTML = '';
   for (const fav of favCharacterList) {
     favListElement.innerHTML += renderCharacter(fav);
