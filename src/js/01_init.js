@@ -17,6 +17,6 @@ function fetchData() {
     });
 }
 
-clearFavOne();
+clearFav();
 fetchData();
 init();
