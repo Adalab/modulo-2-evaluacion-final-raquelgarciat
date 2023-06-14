@@ -8,6 +8,7 @@ const searchValue = searchInput.value;
 let url = 'http://api.disneyapi.dev/character?pageSize=50';
 const searchUrl = 'https://api.disneyapi.dev/character?pageSize=50&name=${charData.name}';
 const clearBtn = document.querySelector('.clear-btn');
+const favLogButton = document.querySelector('.js-fav-log');
 
 let charDataList = [];
 let favCharacterList = [];

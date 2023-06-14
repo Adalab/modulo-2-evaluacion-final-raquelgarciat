@@ -31,3 +31,10 @@ function renderFavList() {
     favListElement.innerHTML += renderCharacter(fav);
   }
 }
+
+function logFavAmount(event) {
+  event.preventDefault();
+  console.log(`El usuario tiene ${favCharacterList.length} favoritos`)
+};
+
+favLogButton.addEventListener('click', logFavAmount)

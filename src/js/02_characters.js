@@ -1,4 +1,8 @@
 function renderCharacter(charData) {
+  let isPopular = '';
+  if (charData.tvShows.length > 2) {
+    isPopular = 'Es popular';
+  }
   let html = `<li id="${charData._id}" class="character_list-one js-li-character">
       <img
         class="char_img"
@@ -6,6 +10,8 @@ function renderCharacter(charData) {
         alt="character"
       />
       <p class="char_name">${charData.name}</p>
+      <p class="tvshows">${charData.tvShows.length}</p>
+      <p class="tvshows-msg">${isPopular}</p>
     </li>`;
   return html;
 }
